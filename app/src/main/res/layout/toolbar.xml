@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/green_1"
+    android:elevation="@dimen/elevation"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Programtas"
+     android:fontFamily="@font/quicksand_bold"
+     android:textSize="@dimen/font_style_40"
+     android:textColor="@color/white"
+     android:textAlignment="center"
+     />
+</androidx.appcompat.widget.Toolbar>

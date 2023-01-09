@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ResultActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_computer"
+        android:layout_width="@dimen/image_computer"
+        android:layout_height="@dimen/image_computer"
+        android:layout_marginTop="@dimen/margin_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/computer_happy" />
+
+    <TextView
+        android:id="@+id/tv_win_or_not"
+        android:layout_width="@dimen/image_computer"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_40"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="@dimen/font_style_40"
+        android:gravity="center"
+        android:text="Ganaste o Perdiste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_computer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_come_back"
+        android:layout_width="@dimen/image_computer"
+        android:layout_height="@dimen/toolbar_height"
+        android:text="Regresar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_style_28"
+        android:background="@drawable/question_box_bg"
+        android:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_win_or_not" />
+</androidx.constraintlayout.widget.ConstraintLayout>
